@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "makechange"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1scd1r0lsbgom"
+s3_prefix = "makechange"
+region = "us-west-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["HelloWorldFunction=866030846001.dkr.ecr.us-west-2.amazonaws.com/makechange31fc26f7/helloworldfunction19d43fc4repo"]
